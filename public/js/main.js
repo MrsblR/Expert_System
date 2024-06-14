@@ -813,34 +813,6 @@ function displayResult(disease, percentage) {
 }
 
 
-
-
-
-
-// // //////////////////////////////////////////
-// // Función para mostrar el resultado en la plantilla HBS
-// function displayResult(disease, percentage) {
-//   const data = {
-//     username: answers.name,
-//     disease: {
-//       name: findDiseaseName(disease),
-//       description: findDiseaseDescription(disease)
-//     },
-//     percentage: percentage,
-//     answers: answers
-//   };
-
-//   const templateSource = document.getElementById('result-template').innerHTML;
-//   const template = Handlebars.compile(templateSource);
-//   const resultHTML = template(data);
-
-//   document.getElementById('result-container').innerHTML = resultHTML;
-
-//   setTimeout(() => {
-//     document.querySelector('.fixed-container').style.overflow = 'auto';
-//   }, 800);
-// }
-
 // Función para encontrar el nombre de la enfermedad
 function findDiseaseName(code) {
   for (let i = 0; i < diseaseDescriptions.length; i++) {
